@@ -4,8 +4,14 @@ import { motion } from 'framer-motion';
 const test = () => {
   return (
     <div className='relative flex h-screen overflow-hidden'>
-      <motion.div animate={{x:[-200,0]}} className='flex z-20 p-5 items-center md:pl-48 justify-center'>
-        <h1 className='text-7xl text-white font-bold'>Milk Equity</h1>
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, x:[-500,0]}}
+      transition={{delay:1.5, easeIn:.1}}
+      className='flex flex-col z-20 p-5  md:pl-48 justify-center'>
+        <div className='text-8xl text-white font-bold'>Milk</div>
+        <div className='text-8xl text-white font-bold'>Equity</div>
+
         </motion.div>
         <div className='absolute z-10 h-full w-full object-cover'>
           <video muted autoPlay loop src={(require('/public/milk1.mp4'))} type='video/mp4'/>
