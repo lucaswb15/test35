@@ -17,7 +17,7 @@ const Main = () => {
       });
     }
     if(!inView){
-      animation.start({scale:0.9})
+      animation.start({scale:0.95})
     }
     console.log("use effect hook, inView=", inView);
   }, [inView]);
@@ -27,22 +27,20 @@ const Main = () => {
 
   return (
     <div className='relative flex h-screen bg-[#e7e5e4] overflow-hidden'>
-      <div className='grid grid-rows-6 '>
-        <div></div>
-        <div></div>
+      <div className='flex flex-col justify-center items-left ml-4 md:ml-36 z-20 p-5 '>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{delay:1.5, easeIn:.1}}
-        className='flex flex-col z-20 p-5  md:pl-48 justify-center'>
-          <div className='text-8xl text-white font-bold'>Milk</div>
+        className=''>
+          <div className='text-8xl text-white font-bold text-left'>Milk</div>
               </motion.div>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{delay:2, easeIn:.1}}
-        className='flex flex-col z-20 p-5  md:pl-48 justify-center'>
-          <div className='text-8xl text-white font-bold'>Equity</div>
+        className=''>
+          <div className='text-8xl text-white font-bold text-left'>Equity</div>
           </motion.div>
         </div>
 
