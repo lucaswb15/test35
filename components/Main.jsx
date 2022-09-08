@@ -13,9 +13,13 @@ const Main = () => {
         <div className='text-8xl text-white font-bold'>Equity</div>
 
         </motion.div>
-        <div className='absolute z-10 h-full w-full object-cover'>
+        <motion.div 
+          animate={{scale:0.9}}
+          initial={{scale:1}}
+          transition={{delay:4}}
+          className='absolute z-10 h-full w-full object-cover'>
           <video muted autoPlay loop src={(require('/public/milk1.mp4'))} type='video/mp4'/>
-        </div>
+        </motion.div>
     </div>
   );
 };
