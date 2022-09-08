@@ -6,7 +6,7 @@ import { useAnimation } from 'framer-motion';
 
 const Main = () => {
   const {ref, inView} = useInView({
-    threshold: 0.45
+    threshold: 0.5
   });
   const animation = useAnimation();
 
@@ -17,7 +17,7 @@ const Main = () => {
       });
     }
     if(!inView){
-      animation.start({scale:0.95})
+      animation.start({scale:0.9})
     }
     console.log("use effect hook, inView=", inView);
   }, [inView]);
@@ -26,20 +26,20 @@ const Main = () => {
 
 
   return (
-    <div className='relative flex h-screen overflow-hidden'>
+    <div className='relative flex h-screen bg-[#e7e5e4] overflow-hidden'>
       <div className='grid grid-rows-6 '>
         <div></div>
         <div></div>
         <motion.div 
         initial={{opacity:0}}
-        animate={{opacity:1, x:[-500,0]}}
+        animate={{opacity:1}}
         transition={{delay:1.5, easeIn:.1}}
         className='flex flex-col z-20 p-5  md:pl-48 justify-center'>
           <div className='text-8xl text-white font-bold'>Milk</div>
               </motion.div>
         <motion.div 
         initial={{opacity:0}}
-        animate={{opacity:1, x:[-500,0]}}
+        animate={{opacity:1}}
         transition={{delay:2, easeIn:.1}}
         className='flex flex-col z-20 p-5  md:pl-48 justify-center'>
           <div className='text-8xl text-white font-bold'>Equity</div>
