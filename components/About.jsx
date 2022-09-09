@@ -2,7 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='h-screen bg-[#e7e5e4]'>investment cards slide in and out</div>
+    <div className='w-full h-screen bg-color_bg'>
+      <div className=''>
+
+      </div>
+    </div>
   )
 }
 
