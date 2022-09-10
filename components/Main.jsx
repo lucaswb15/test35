@@ -6,7 +6,7 @@ import { useAnimation } from 'framer-motion';
 
 const Main = () => {
   const {ref, inView} = useInView({
-    threshold: 0.5
+    threshold: 0.6
   });
   const animation_bg_vid = useAnimation();
 
