@@ -21,7 +21,7 @@ const About4 = () => {
   useEffect(() => {
     if (inView) {
       controls.start('visible');
-    }
+    } {/* Remove section below if you don't want it happend on every scroll */}
     if (!inView) {
       controls.start('hidden');
     }

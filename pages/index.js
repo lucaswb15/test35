@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
       <Main/>
       <About4/>
+      <About2/>
     </div>
   )
 }
