@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-const About4 = () => {
+const About_live = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -46,22 +46,22 @@ const About4 = () => {
     <div className='w-full h-screen bg-color_bg'>
       <div className='text-center'>
         <div className='columns-2 pt-52'>
-        <div className='text-4xl sm:text-6xl text-white'>6 Entrances</div>
+        <div className='text-4xl sm:text-6xl text-black'>6 Entrances</div>
 
-          <div className='text-4xl sm:text-6xl text-white'>Data driven investments</div>
+          <div className='text-4xl sm:text-6xl text-black'>Data driven investments</div>
         </div>
         <div className='columns-2 pt-24'>
-          <div className='text-4xl sm:text-6xl text-white'>$800+ AUM</div>
+          <div className='text-4xl sm:text-6xl text-black'>$800+ AUM</div>
           <div ref={ref} className='flex relative justify-center inset-0'>
               <motion.svg width="410" height="410"  fill="none" xmlns="http://www.w3.org/2000/svg"
               variants={svgVariants}
               initial="hidden"
               animate={controls}>
-              <motion.circle cx="202.5" cy="202.5" r="202" stroke-width="5" stroke="white"
+              <motion.circle cx="202.5" cy="202.5" r="202" stroke-width="5" stroke="black"
                variants={pathVariants}/>
               </motion.svg>
 
-            <h1 className='absolute inset-y-0 my-32 text-8xl text-white'>$800+</h1>
+            <h1 className='absolute inset-y-0 my-32 text-8xl text-black'>$800+</h1>
 
           </div>
 
@@ -71,4 +71,4 @@ const About4 = () => {
   )
 }
 
-export default About4
+export default About_live

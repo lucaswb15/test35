@@ -1,7 +1,6 @@
 import Main from '../components/Main'
 import Head from 'next/head'
-import About2 from '../components/About2'
-
+import About3 from '../components/About3'
 import About_live from '../components/About_live'
 
 
@@ -15,7 +14,7 @@ export default function Home() {
       </Head>
       <Main/>
       <About_live/>
-      <About2/>
+      <About3/>
     </div>
   )
 }
