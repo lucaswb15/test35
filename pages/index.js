@@ -1,8 +1,8 @@
 import Main from '../components/Main'
 import Head from 'next/head'
 import About2 from '../components/About2'
-import About3 from '../components/About3'
-import About4 from '../components/About4'
+
+import About_live from '../components/About_live'
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main/>
-      <About4/>
+      <About_live/>
       <About2/>
     </div>
   )
