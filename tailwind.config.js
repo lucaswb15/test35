@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'color_bg': 'bg-slate-100', 
+        'color_bg': '#1f1f26', 
         /*548687*/
       },
     },

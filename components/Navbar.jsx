@@ -26,8 +26,8 @@ const Navbar = () => {
                 } 
                 >
                 <div>
-                    <div>
-                        Hello
+                    <div className='p-4 text-8xl text-bold'>
+                        Milk Equity
                     </div>
                     <ul>
                         <li onClick={handleNav} className='p-4 text-4xl text-bold hover:text-gray-500'>
