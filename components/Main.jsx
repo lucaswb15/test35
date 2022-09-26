@@ -33,14 +33,14 @@ const Main = () => {
         animate={{opacity:1}}
         transition={{delay:1.5, easeIn:[0.5, .75, 1]}}
         className=''>
-          <h1 className='text-6xl md:text-8xl text-white font-bold'>Milk</h1>
+          <h1 className='text-6xl md:text-9xl text-white font-bold'>Milk</h1>
               </motion.div>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{delay:2, easeIn:.1}}
         className=''>
-          <h1 className='text-6xl md:text-8xl text-white font-bold'>Equity</h1>
+          <h1 className='text-6xl md:text-9xl text-white font-bold'>Equity</h1>
           </motion.div>
         </div>
 

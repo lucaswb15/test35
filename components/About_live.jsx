@@ -45,12 +45,12 @@ const About_live = () => {
   }
 
   return (
-    <div className="h-screen pt-12  bg-color_bg">
+    <div className="bg-color_bg">
       <h1 className="flex justify-center text-gray-400 text-8xl ">Informed Investments - Diverse Portfolio</h1>
       <div className='flex justify-center'>
-          <div className="grid gap-x-40 gap-y-40 grid-cols-1 grid-rows-2 sm:grid-cols-3">
+          <div className="grid gap-x-40 gap-y-40 grid-cols-1 grid-rows-2 md:grid-cols-3">
           {/*First Item*/}
-              <div ref={ref} className='flex relative justify-center border border-white'>
+              <div ref={ref} className='flex relative justify-center '>
               <motion.svg width="410" height="410"  fill="none" xmlns="http://www.w3.org/2000/svg"
                 variants={svgVariants}
                 initial="hidden"
@@ -64,7 +64,7 @@ const About_live = () => {
                 <h1 className='absolute inset-x-0 bottom-0 -mb-12 flex justify-center text-3xl text-gray-500'>Invested since 2021</h1>
               </div>
           {/*Second Item*/}
-                <div ref={ref} className='flex relative justify-center border border-white'>
+                <div ref={ref} className='flex relative justify-center'>
               <motion.svg width="410" height="410"  fill="none" xmlns="http://www.w3.org/2000/svg"
                 variants={svgVariants}
                 initial="hidden"
@@ -78,7 +78,7 @@ const About_live = () => {
                 <h1 className='absolute inset-x-0 bottom-0 -mb-12 flex justify-center text-3xl text-gray-500'>Invested since 2021</h1>
               </div>
             {/*Third Item*/}
-              <div ref={ref} className='flex relative justify-center border border-white'>
+              <div ref={ref} className='flex relative justify-center'>
               <motion.svg width="410" height="410"  fill="none" xmlns="http://www.w3.org/2000/svg"
                 variants={svgVariants}
                 initial="hidden"
